@@ -1,37 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon projet n°1</title>
+    <title>projet n°1</title>
     <style>
         body {
-            background-color: #00002B; /* Dark blue background */
-            color: white; /* White text color for better contrast */
+            background-color: #2C3E50; color: white;
+            justify-content: center; justify-content: space-between;
+            align-items: center; display: flex; flex-direction: column;
+        }
+      
+        h1, h2, h3, h4 {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
         }
         .box {
-            background-color: yellow;
-            padding: 10px;
-            margin: 10px 0;
-        }
+            background-color: #3498DB;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 20px;
+                max-width: 30%;
+            }
+
     </style>
 </head>
 <body>
     <h1>Konate Mamady</h1>
     <p><strong>Bienvenue sur mon portfolio</strong></p> 
 
-    <h2>Présentation</h2>
-    <p>Je suis Konate Mamady, étudiant en informatique au sein de l'école Isitech, et en alternance au CHHB d'Oyonnax. Passionné par le développement web et les nouvelles technologies, je vous invite à découvrir mes projets et réalisations à travers ce portfolio.</p>
-    
-    <h2>Parcours</h2>
-    <p>Mon parcours académique et professionnel inclut des études en informatique à l'école Isitech et une alternance au CHHB d'Oyonnax.</p>
+    <h2>Compétences</h2>
+    <div>
+        <div class="box">
+            <h3>Travail collaboratif et adaptabilité</h3>
+            <p>Capacité à s’adapter et travailler efficacement avec les membres de l'équipe, à favoriser un environnement de travail positif et à encourager la collaboration pour atteindre les objectifs.</p>
+        </div>
 
-    <h2>Compétence</h2>
-    <p>Je possède des compétences en développement web, notamment en HTML, CSS, JavaScript, et en frameworks comme React et Angular.</p>
+        <div class="box">
+            <h3>Résolution stratégique</h3>
+            <p>La capacité à identifier, analyser et résoudre les problèmes de manière stratégique.</p>
+        </div>
 
-    <h2>Entreprise</h2>
-    <p>Actuellement, je travaille en alternance au CHHB d'Oyonnax, où je participe à divers projets de développement et de maintenance de systèmes informatiques.</p>
-
-    <div class="box">Contenu de la boîte</div>
-</body>
+        <div class="box">
+            <h3>Utilisation d'outils informatiques spécialisés</h3>
+            <p>Utilisation quotidienne des outils tels que GLPI, SCCM, Active Directory, ainsi que des outils spécialisés dans le domaine hospitalier comme Hextant et Hôpital Manager.</p>
+        </div>
+    </div>
+</body> 
 </html>
