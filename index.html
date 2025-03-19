@@ -6,33 +6,35 @@
     <title>projet n°1</title>
     <style>
         body {
-            background-color: #2C3E50;
-            color: white;
-            display: flex; 
-            flex-direction: column; 
-            align-items: center;
-        }   
+    background-image: url(https://static.vecteezy.com/system/resources/previews/013/131/262/original/blue-background-dark-blue-abstract-background-geometry-shine-and-layer-element-for-presentation-design-vector.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 100% 100%;
+}
+;
+            
 
         h1, h2, h3, h4, h5 {
             text-align: center;
-            background-color: #00002B;
             color: white; 
         }
 
-        .section-container {
+        .box-container {
             display: flex;
             justify-content: space-between;
             width: 90%;
-            margin: 15px 0;
+            margin: 10px 0;
         }
 
-        .section {
+        .box {
             background-color: #3498DB;
             padding: 20px;  /* marge intérieur */
             margin: 10px; /* marge exterieur */
             border-radius: 10px; /* bordure arrondie */
             flex: 1; 
             max-width: 50%; 
+            align-items: right  ;
+            justify-content: right;
         }
 
         .photo-container {
@@ -43,10 +45,10 @@
         }
 
         .photo { 
-            width: 45%;
+            width: 15%;
             height: 200px;
-            background-color: #1A252F;
-            border-radius: 10px;
+            background-color: #9fb7ce;
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -71,38 +73,98 @@
     </style>
 </head>
 <body>
-    <h1>Konate Mamady</h1>
-    <p><strong>Bienvenue sur mon portfolio</strong></p>
+    <h1 class="header-title">Konate Mamady</h1>
+    <h2 class="header-subtitle"><strong>Bienvenue sur mon portfolio</strong></h2>
+    <h3 class="header-E4">Épreuve E4</h3>
+    
+    <style>
+        .header-title{
+            position: absolute;
+            top: 10px; /* Dist avc le haut */
+            right: 500px; /* Dist avc la droite */
+            color: white;
+            text-align: right;
+            margin: /* Suppr les marges */
+        }
 
-    <div class="presentation-container">
-        <div class="presentation">
+            .header-subtitle{
+                position: absolute;
+                top: 90px;
+                right: 465px;
+                color: white;
+                text-align: right;
+                margin: 0;
+            }
+
+            .header-E4{
+                position: absolute;
+                top: 130px;
+                right: 570px;
+                color: white;
+                text-align: right;
+                margin: 0;
+            }
+
+
+        
+    </style>
+    
+
+    <div class="box-container">
+        <div class="box">
             <h2>École</h2>
-            <p>Je suis actuellement étudiant en informatique à l'école Isitech, située à Lyon. En parallèle de mes études, je réalise mon alternance, 
-            ce qui me permet d'acquérir une expérience pratique tout en consolidant mes connaissances théoriques. 
+            <p>Je suis actuellement étudiant en informatique à l'école Isitech, située à Lyon. 
             Isitech est une école spécialisée dans la formation en informatique, offrant un cadre idéal pour développer des compétences en système, 
             réseaux, et nouvelles technologies.</p>
+            <img src="https://th.bing.com/th/id/R.6e63489ffad8ac6c61c49a30c216df01?rik=mNItSub53EdutA&amp;pid=ImgRaw&amp;r=0" 
+                 alt="Logo de l'école Isitech" style="width: 100%;>
         </div>
-
-        <div class="presentation">
+    
+        <div class="box">
             <h2>Entreprise</h2>
             <p>En parallèle de mes études, je réalise mon alternance, ce qui me permet d'acquérir une expérience pratique 
             tout en consolidant mes connaissances théoriques. Mon rôle est d'apporter du soutien au support informatique, garantir que
-            tous les équipements et services fonctionnent de manière optimale, et la gestion des réseaux et du déploiement de nouvelles solutions
+            tous les équipements et services et fonctionnement de manière optimale, et la gestion des réseaux et du déploiement de nouvelles solutions
             technologiques.</p>
+            <img src="https://www.oyonnax.fr/wp-content/uploads/2023/01/hopital-chhb-1-2-1920x1285.jpg" 
+                 alt="Logo CHHB - Forum des métiers hospitaliers" style="width: 100%";>
         </div>
     </div>
 
-    <div class="photo">
-        <div class="photo-Isitech">Isitech</div>
-        <body align-items : flex-start;>    
 
+<h2 class="header-comp">Compétences</h2>
+<style>
+    .header-comp {
+        position: absolute;
+        top: 700px;
+        right: 700px;
+        color: white;
+        text-align: right;
+        margin: 0;
+    }
+</style>
 
+<style>
 
+    .container {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin-top: 20px;
+    }
 
-        <div class="photo-CHHB">alternance</div>
-    </div>
+    .box {
+        background-color: #3498DB;
+        padding: 15px;
+        margin: 15px;
+        border-radius: 10px;
+        max-width: 30%; 
+        align-items: right;
+     
+    
+    }
 
-    <h2>Compétences</h2>
+    </style>
     <div class="container">
         <div class="box">
             <h3>Travail collaboratif et adaptabilité</h3>
@@ -116,8 +178,59 @@
 
         <div class="box">
             <h3>Utilisation d'outils informatiques spécialisés</h3>
-            <p>Utilisation quotidienne des outils tels que GLPI, SCCM, Active Directory, ainsi que des outils spécialisés dans le domaine hospitalier comme Hextant et Hôpital Manager.</p>
+            <p>Utilisation quotidienne des outils tels que GLPI, sccm, Active Directory, ainsi que des outils spécialisés dans le domaine hospitalier comme Hextant et Hôpital Manager.</p>
         </div>
     </div>
+</style>
+
+
+<br> 
+@media screen and (min width: )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
-</html>
+</html  >
