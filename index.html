@@ -184,9 +184,47 @@
 </style>
 
 
-<br> 
-@media screen and (min width: )
+@media screen and (min width: 480px)
 
+<style>
+    /* Responsive design pour les téléphones */
+    @media screen and (max-width: 480px) {
+        body {
+            font-size: 14px; /* police */
+        }
+
+        .box-container, .container {
+            flex-direction: column;
+            align-items: center; /* Centre les éléments */
+            width: 100%; /* largeur écran */
+        }
+
+        .box {
+            max-width: 90%; /* largeur des boîtes */
+            margin: 10px auto; /* espace autour des boîtes */
+            padding: 10px; /* diminution espace intérieur */
+        }
+
+        h1,h2,h3 {
+        font-size: center; 
+        text-align: center;
+        }
+        }
+
+        .header-title, .header-subtitle, .header-E4 {
+            position: static; 
+            text-align: center;
+            margin: 10px 0; /* espace vert */
+        }
+
+        img {
+            width: 100%; 
+            height: auto; 
+            border-radius: 10px; 
+        }
+    }font-size: 1.5em; /* taille titres */
+    text-align: center;
+</style>
 
 
 
