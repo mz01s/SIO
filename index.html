@@ -5,216 +5,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Konate Mamady</title>
-    <style>
-        body {
-            background-image: url(https://static.vecteezy.com/system/resources/previews/013/131/262/original/blue-background-dark-blue-abstract-background-geometry-shine-and-layer-element-for-presentation-design-vector.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            font-family: Arial, sans-serif;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .header-title {
-            font-size: 2.5em;
-            margin: 0;
-        }
-
-        .header-subtitle {
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-
-        .header-E4 {
-            font-size: 1.2em;
-            margin: 5px 0;
-        }
-
-        .section {
-            padding: 20px;
-            margin: 20px auto;
-            width: 90%;
-            background-color: rgba(0, 0, 0, 0.6);
-            border-radius: 10px;
-        }
-
-        .box-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .box {
-            background-color: #3498DB;
-            padding: 20px;
-            border-radius: 10px;
-            flex: 1;
-            min-width: 300px;
-            max-width: 45%;
-        }
-
-        .box img {
-            width: 100%;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-
-        .photo-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .photo {
-            width: 200px;
-            height: 200px;
-            background-color: #9fb7ce;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 20px;
-        }
-
-        @media screen and (max-width: 480px) {
-            body {
-                font-size: 14px;
-            }
-
-            .box-container,
-            .container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .box {
-                max-width: 90%;
-            }
-
-            header {
-                text-align: center;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> <!--- vers le fichier css -->
 </head>
 
 <body>
+    <!-- En-tête de la page -->
     <header>
         <h1 class="header-title">Konate Mamady</h1>
         <h2 class="header-subtitle"><strong>Bienvenue sur mon portfolio</strong></h2>
         <h3 class="header-E4">Épreuve E4</h3>
     </header>
 
-    <section class="organisation">
 
-     <h2>À propos de moi</h2>
-     <div class="box-container">
-         <div class="box">
-         <h3>École</h3>
-         <p>Je suis actuellement étudiant en informatique à l'école Isitech, située à Lyon. Isitech est une école spécialisée dans la formation en informatique, offrant un cadre idéal pour développer des compétences en système, réseaux, et nouvelles technologies.</p>
-          <img src="https://th.bing.com/th/id/R.6e63489ffad8ac6c61c49a30c216df01?rik=mNItSub53EdutA&amp;pid=ImgRaw&amp;r=0" alt="Logo de l'école Isitech">
-            </div>
+    <section class="organisation">
+        <h2>À propos de moi</h2>
+        <div class="box-container">
+   
             <div class="box">
-             <h3>2024-2026</h3>
-           <img src="https://th.bing.com/th/id/R.89a609a7f4f5a020b3fa904edbb6d2c0?rik=F%2bAZeUMcFFdfAg&riu=http%3a%2f%2fwww.lyonpoleimmo.com%2fwp-content%2fuploads%2fIsitech-Avenue-Gerland.jpg&ehk=wdb7dEGyLWkP8YjkU1Pl%2b24jwNfX3o1CUhB0pOLUKBI%3d&risl=&pid=ImgRaw&r=0" alt="Bâtiment Isitech">
+                <h3>École</h3>
+                <p>Je suis actuellement étudiant en informatique à l'école Isitech, située à Lyon. Isitech est une école spécialisée dans la formation en informatique, offrant un cadre idéal pour développer des compétences en système, réseaux, et nouvelles technologies.</p>
+                <img src="https://th.bing.com/th/id/R.6e63489ffad8ac6c61c49a30c216df01?rik=mNItSub53EdutA&amp;pid=ImgRaw&amp;r=0" alt="Logo de l'école Isitech">
             </div>
+
+            <div class="box">
+                <h3>2024-2026</h3>
+                <img src="https://th.bing.com/th/id/R.89a609a7f4f5a020b3fa904edbb6d2c0?rik=F%2bAZeUMcFFdfAg&riu=http%3a%2f%2fwww.lyonpoleimmo.com%2fwp-content%2fuploads%2fIsitech-Avenue-Gerland.jpg&ehk=wdb7dEGyLWkP8YjkU1Pl%2b24jwNfX3o1CUhB0pOLUKBI%3d&risl=&pid=ImgRaw&r=0" alt="Bâtiment Isitech">
+            </div>
+   
             <div class="box">
                 <h3>Entreprise</h3>
-                <p>En parallèle de mes études, je réalise mon alternance, ce qui me permet d'acquérir une expérience pratique tout en consolidant mes connaissances théoriques. Mon rôle est d'apporter du soutien au support informatique, garantir que tous les équipements et services fonctionnent de manière optimale, et gérer les réseaux ainsi que le déploiement de nouvelles solutions technologiques.</p>
+                <p>En parallèle de mes études, je réalise mon alternance, ce qui me permet d'acquérir une 
+                    expérience pratique tout en consolidant mes connaissances théoriques. Mon rôle est d'apporter du soutien au support informatique, garantir que tous les équipements et services fonctionnent de manière optimale, et gérer les réseaux ainsi que le déploiement de nouvelles solutions technologiques.</p>
                 <img src="https://www.oyonnax.fr/wp-content/uploads/2023/01/hopital-chhb-1-2-1920x1285.jpg" alt="Logo CHHB - Forum des métiers hospitaliers">
             </div>
         </div>
     </section>
-    <section>
-
+    
+    <!-- Section Pojet (pour regrouper les mêmes thèmes) -->
     <section class="organisation">
         <h2>Projets</h2>
         <div class="box" style="margin: 0 auto; text-align: center;"></div>
-            <h3>AP0 : Mise en place d'une solution de sauvegarde</h3>
-            <p>J'ai mis en place une solution de sauvegarde et de restauration pour un serveur Windows, en utilisant les outils intégrés de Windows Server. Mon objectif était de garantir la sécurisation des données et de permettre une récupération rapide en cas de perte ou d'incident.</p>
-            <ul>
+
+        <h3>AP0 : Mise en place d'une solution de sauvegarde</h3>
+        <p>J'ai mis en place une solution de sauvegarde et de restauration pour un serveur Windows, en utilisant les outils intégrés de Windows Server. Mon objectif était de garantir la sécurisation des données et de permettre une récupération rapide en cas de perte ou d'incident.</p>
+        <ul>
             <li><strong>Préparation de l'environnement :</strong> Configuration d'un serveur virtuel sous Windows Server 2022, ajout et configuration d'un disque dur virtuel dédié.</li>
             <li><strong>Mise en place de la sauvegarde :</strong> Paramétrage des réglages nécessaires, lancement d'une sauvegarde complète du serveur.</li>
             <li><strong>Vérification et tests :</strong> Contrôle de la réussite de la sauvegarde et tests de restauration pour garantir l'intégrité des données.</li>
-            </ul>
-
-            <h3>AP1 : mise en place un pare-feu pour protéger un réseau contre les menaces et les accès non autorisés.</h3>
-            <p>Mon objectif était de sécuriser un réseau local en mettant en place un pare-feu, pour protéger les données et 
-            les équipements contre les menaces extérieures et les accès non autorisés.</p>
-            <ul> 
+        </ul>
+    
+        <h3>AP1 : mise en place un pare-feu pour protéger un réseau contre les menaces et les accès non autorisés.</h3>
+        <p>Mon objectif était de sécuriser un réseau local en mettant en place un pare-feu, pour protéger les données et 
+        les équipements contre les menaces extérieures et les accès non autorisés.</p>
+        <ul> 
             <li><strong>Installation de pfSense :</strong> Installer pfSense sur une machine virtuelle, configurer 
                 les interfaces réseau pour gérer les connexions entrantes (WAN) et internes (LAN).</li>
             <li><strong>Configuration initiale :</strong> Accéder à l'interface d'administration via un navigateur web, définir
                  les paramètres réseau (adresse IP, passerelle, etc.), et adapter la configuration aux besoins spécifiques du réseau.</li>
             <li><strong>Établissement des règles de pare-feu :</strong> Créer des règles simples pour autoriser ou bloquer le trafic selon
                  les exigences, et ajouter des restrictions pour certains ports ou services si nécessaire.</li>
-            </ul>
-        </div>
-
-        
+        </ul>
     </section>
 
+    <!-- Section Compétences -->
     <section class="organisation">
         <h2>Compétences</h2>
         <div class="container">
+
             <div class="box">
                 <h3>Travail collaboratif et adaptabilité</h3>
                 <p>Capacité à s’adapter et travailler efficacement avec les membres de l'équipe, à favoriser un environnement de travail positif et à encourager la collaboration pour atteindre les objectifs.</p>
             </div>
+
             <div class="box">
                 <h3>Résolution stratégique</h3>
                 <p>La capacité à identifier, analyser et résoudre les problèmes de manière stratégique.</p>
             </div>
+
             <div class="box">
                 <h3>Utilisation d'outils informatiques spécialisés</h3>
                 <p>Utilisation quotidienne des outils tels que GLPI, SCCM, Active Directory, ainsi que des outils spécialisés dans le domaine hospitalier comme Hextant et Hôpital Manager.</p>
             </div>
         </div>
-        
+    </section>
 
-        <section class="organisation">
-            <h2 style="text-align: center; font-size: 2em; margin-bottom: 20px;">Contactez-moi</h2>
-            <form style=background-color: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-            <div style="margin-bottom: 20px;">
-                <label for="name" style="display: block; margin-bottom: 10px; font-size: 1.1em; color: #fff;">Nom :</label>
-                <input type="text" id="name" name="name" required style="width: 100%; padding: 12px; border-radius: 5px; border: none; background-color: #f0f0f0; font-size: 1em;">
+    <!-- Section Formulaire -->
+    <section>
+        <h2>Me contacter</h2>
+        <form action="#" method="post" style="width: 680px; margin: auto; background: rgb(97, 156, 208); padding: 20px; height: 500px; display: flex; flex-direction: column; justify-content: space-between;">
+
+            <div>
+                <label>Nom :</label><br>
+                <input type="text" name="name" style="width: 100%;"><br><br>
             </div>
-            <div style="margin-bottom: 20px;">
-                <label for="email" style="display: block; margin-bottom: 10px; font-size: 1.1em; color: #fff;">Email :</label>
-                <input type="email" id="email" name="email" required style="width: 100%; padding: 12px; border-radius: 5px; border: none; background-color: #f0f0f0; font-size: 1em;">
+
+            <div>
+                <label>Email :</label><br>
+                <input type="email" name="email" style="width: 100%;"><br><br>
             </div>
-            <div style="margin-bottom: 20px;">
-                <label for="message" style="display: block; margin-bottom: 10px; font-size: 1.1em; color: #fff;">Message :</label>
-                <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 12px; border-radius: 5px; border: none; background-color: #f0f0f0; font-size: 1em;"></textarea>
-            </div>
-            <button type="submit" style="background-color: #3498DB; color: white; padding: 12px 25px; border: none; border-radius: 5px; font-size: 1.1em; cursor: pointer; transition: background-color 0.3s;">
-                Envoyer
-            </button>
-            </form>
-        </section>
+
+            <label>Message :</label><br>
+            <textarea name="message" rows="8" style="width: 100%; height: 100%;"></textarea><br><br>
+            <!-- Bouton Envoyer -->
+            <button type="submit" style="background: blue; color: white;">Envoyer</button>
+            <p id="confirmation-message" style="color: green; display: none;">Votre message a été envoyé avec succès !</p>
+        </form>
+    </section>
+
+    <!-- Script pour coder en JavaScript -->
+    <script src="script.js"></script>
+
+
+    <footer>
+        <p style="text-align: center;">© 2025 Konate Mamady - Tout droits réservés</p>
+    </footer>
+
+    <!-- Barre de navigation -->
+    <nav style="position: fixed; top: 0; width: 100%; background-color: #333; padding: 10px 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+        <ul style="list-style: none; display: flex; justify-content: center; gap: 30px; margin: 0; padding: 0;">
+            <li><a href="#apropos" style="text-decoration: none; color: white; font-weight: bold; font-size: 16px;">À propos</a></li>
+            <li><a href="#projets" style="text-decoration: none; color: white; font-weight: bold; font-size: 16px;">Projets</a></li>
+            <li><a href="#compétences" style="text-decoration: none; color: white; font-weight: bold; font-size: 16px;">Compétences</a></li>
+            <li><a href="#contact" style="text-decoration: none; color: white; font-weight: bold; font-size: 16px;">Me contacter</a></li>
+        </ul>
+    </nav>
 
 
 
-
-
-
+    <section class="organisation"></section>
+        <h2>Mon CV</h2>
+        <div style="text-align: center; margin: 20px 0;">
+            <a href="konate_mamady.pdf" download style="text-decoration: none; background-color: #007BFF; color: white; padding: 10px 20px; border-radius: 5px; font-size: 16px;">Télécharger mon CV</a>
+        </div>
+    </section>
 
 </body>
-
 </html>
+
